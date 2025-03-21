@@ -57,7 +57,7 @@ footer {
         }
 
         .navbar {
-            background-color: #ff6f61;
+            background-color: #ff61d7;
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -73,12 +73,12 @@ footer {
         }
 
         .navbar a:hover {
-            background-color: #ff9a8b;
+            background-color: #c122e0;
             border-radius: 12px;
         }
 
         .navbar a.active {
-            background-color: #ff3f34;
+            background-color: #8e0bf8;
             border-radius: 12px;
         }
 
