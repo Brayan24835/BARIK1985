@@ -1,65 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Productos</title>
-    <link rel="stylesheet" href="INDEX.css">
+    <meta name="description" content="Página web moderna con HTML y CSS">
+    <meta name="author" content="Tu Nombre">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body background="https://bs.uenicdn.com/blog/wp-content/uploads/2018/04/giphy.gif"></body>>
-    <div class="navbar">
-        <a href="index.html" class="active">Inicio</a>
-        <a href="novedades.html">Novedades</a>
-        <a href="nina.html">Niña</a>
-        <a href="nino.html">Niño</a>
-        <a href="ofertas.html">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>Bienvenido a Barik Geans Girl</h1>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="section hero">
+        <div class="container">
+            <h2>Lo mejor en Mezclilla para los pequeñines de la casa</h2>
+            <p>Pantalones, Faldas, Shorts y vestidos .</p>
+            <a href="index.html" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="acerca" class="section">
+        <div class="container">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un equipo apasionado por la tecnología y el desarrollo web.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Misión</h3>
+                    <p>Proveer soluciones digitales efectivas.</p>
+                </div>
+                <div class="card">
+                    <h3>Visión</h3>
+                    <p>Ser líderes en innovación tecnológica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>✅ Diseño Web</h3>
+                    <p>Desarrollo de sitios atractivos y funcionales.</p>
+                </div>
+                <div class="card">
+                    <h3>📱 Apps Móviles</h3>
+                    <p>Aplicaciones modernas para Android e iOS.</p>
+                </div>
+                <div class="card">
+                    <h3>💡 Consultoría</h3>
+                    <p>Asesoría en transformación digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
-<header>
-    <h1>Barik Jeans Girl</h1>
-    <p>Encuentra los mejores productos aquí</p>
-</header>
 
-<div class="catalogo-container">
-    <div class="producto">
-        
-        <a href="index1.html"> <img src="https://http2.mlstatic.com/D_NQ_NP_800942-MLM75264746213_032024-O.webp"alt="Producto 1"></a>
-        <h3>Pantalon Entubado </h3>
-        <p>Pantalon entubado tallas  de la 2 a la 16</p>
-        <div class="precio">$125 Mayoreo </div>
-        <div class="precio">$150 c/u</div>
-    </div>
-
-    <div class="producto">
-        <a href="index1.html"> <img src="https://detqhtv6m6lzl.cloudfront.net/HCLContenido/producto/FullImage/MK-7506578907589-1.jpg"alt="Producto 2"></a>
-        <h3>Pantalon de cargo</h3>
-        <p>Pantalon de cargo tallas de la 4 al 16 color claro y obscuro </p>
-        <div class="precio">$140 Mayoreo</div>
-        <div class="precio">$160 c/u</div>
-    </div>
-
-    <div class="producto">
-        <img src="https://i.pinimg.com/236x/b9/5c/22/b95c22fa6a2d48cd61213a470abe7de6.jpg" alt="Producto 3">
-        <h3>Pantalon bordado</h3>
-        <p>Pantalon bordado de tubo y de campana tallas 2 a al 16</p>
-        <div class="precio">$130 150 Tubo</div>
-        <div class="precio">$135 155 campana</div>
-    </div>
-
-    <div class="producto">
-        <img src="https://cdn-images.farfetch-contents.com/19/88/01/77/19880177_44814830_600.jpg" alt="Producto 4">
-        <h3>Pantalon Bordado cargo</h3>
-        <p>antalon de cargo niña 2 a la 16 </p>
-        <div class="precio">$160 c/u</div>
-        <div class="precio">$130 Mayoreo</div>
-    </div>
-</div>
-
-
-<footer>
-    <a href="InfoAutor.html"> <p>&copy; BARIK JEANS GIRL</p></a>
-</footer>
-
-</body>
 </html>
